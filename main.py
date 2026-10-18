@@ -1,6 +1,6 @@
 """
 Real-Time Market Discrepancy & Arbitrage Engine
-Author: Quantitative Analytics & Solutions
+Author: YSL
 Description: An automated pipeline that monitors live sports derivative markets, 
 calculates cross-book consensus medians, and dispatches actionable +EV trade signals.
 """
