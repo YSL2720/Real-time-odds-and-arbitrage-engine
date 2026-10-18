@@ -71,7 +71,7 @@ export DISCORD_WEBHOOK_URL="your_webhook_url_here"
 ```
 (Or input them directly into the configuration block of main.py for testing).
 
-## Execute the scanner
+## 4. Execute the scanner
 ```bash
 python main.py
 ```
