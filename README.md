@@ -1,4 +1,4 @@
-Real-Time Market Discrepancy & Arbitrage Engine
+## Real-Time Market Discrepancy & Arbitrage Engine
 
 An automated quantitative data pipeline built in Python that monitors live derivative sports markets, calculates multi-book market consensus medians, isolates retail pricing inefficiencies on DraftKings and FanDuel, and dispatches real-time actionable trade alerts via asynchronous Discord webhooks.
 
@@ -7,7 +7,7 @@ Easy. I wanted to see if I can find any discrepancies between books and find a +
 
 ---
 
-🏗 Pipeline Architecture
+Pipeline Architecture:
 
 [The Odds API Feed]
 │
@@ -30,7 +30,7 @@ Easy. I wanted to see if I can find any discrepancies between books and find a +
 
 ---
 
-## ⚡ Core Engineering & Quantitative Features
+## Core Engineering & Quantitative Features
 
 * **Multi-Book Consensus Modeling:** Eliminates binary assumption bias by aggregating line distributions across all active market makers, dynamically calculating the true market median (`statistics.median`).
 * **Asymmetric Vig Normalization:** Maps complex two-way derivative markets (Over and Under prices) simultaneously, ensuring signals account for asymmetric juice and hold percentages.
@@ -40,7 +40,7 @@ Easy. I wanted to see if I can find any discrepancies between books and find a +
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python 3.9+
 * **Data Processing & Analytics:** `statistics`, `json`
@@ -50,7 +50,7 @@ Easy. I wanted to see if I can find any discrepancies between books and find a +
 
 ---
 
-## 🚀 Installation & Local Execution
+## Installation & Local Execution
 
 ### 1. Clone the Repository
 ```bash
@@ -73,7 +73,7 @@ export DISCORD_WEBHOOK_URL="your_webhook_url_here"
 ```bash
 python main.py
 ```
-## 📊 Sample Output Signal
+## Sample Output Signal
 ```bash
 🎯 HIGH-CONVICTION BET FOUND
 Player: Trevor Lawrence (Player Pass Yds)
@@ -87,7 +87,14 @@ Matchup: Houston Texans @ Jacksonville Jaguars
 💡 Why: DraftKings is 7.0 yds BELOW market consensus (228.5)!
 --------------------------------------
 ```
+## Acknowledgements & Tooling
 
+Special recognition to the developer platforms and intelligence tools that powered this project:
+
+* **[Google AI Studio](https://aistudio.google.com/):** For providing the LLM developer platform and AI engine used for research, quantitative data and mega help all around.
+* **[Google Colab](https://colab.research.google.com/):** For providing the cloud-hosted interactive Python runtime environment used for prototyping, testing, and live execution. My first playground.
+* **[The Odds API](https://the-odds-api.com/):** For providing real-time odds data feeds and multi-bookmaker REST endpoints.
+* **[Discord](https://discord.com/):** For facilitating event-driven webhook notifications and instant mobile trade alerts.
 
 
 
