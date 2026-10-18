@@ -10,6 +10,7 @@ An automated quantitative data pipeline built in Python that monitors live deriv
 ---
 
 🏗 Pipeline Architecture
+
 [The Odds API Feed]
 │
 ▼
