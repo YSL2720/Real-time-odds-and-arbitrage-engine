@@ -59,7 +59,37 @@ An automated quantitative data pipeline built in Python that monitors live deriv
 git clone https://github.com/YSL2720/realtime-odds-arbitrage-engine.git
 cd realtime-odds-arbitrage-engine
 ```
-2. Install dependencies
+## 2. Install dependencies
+```bash
+pip install requests
+```
+## 3. Configure Credentials
+Set your API keys as environment variables:
+```bash
+export ODDS_API_KEY="your_api_key_here"
+export DISCORD_WEBHOOK_URL="your_webhook_url_here"
+```
+(Or input them directly into the configuration block of main.py for testing).
+
+## Execute the scanner
+```bash
+python main.py
+```
+## 📊 Sample Output Signal
+```bash
+🎯 HIGH-CONVICTION BET FOUND
+Player: Trevor Lawrence (Player Pass Yds)
+Matchup: Houston Texans @ Jacksonville Jaguars
+
+📊 Market Consensus: 228.5 Yards (across 5 books)
+• DraftKings: 221.5 (Over -113 | Under -115)
+• FanDuel: 228.5 (Over -113 | Under -113)
+
+🚀 ACTION: 👉 BET OVER ON DRAFTKINGS (221.5 @ -113)
+💡 Why: DraftKings is 7.0 yds BELOW market consensus (228.5)!
+--------------------------------------
+```
+
 
 
 
