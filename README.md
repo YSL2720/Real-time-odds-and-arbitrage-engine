@@ -7,6 +7,8 @@ Real-Time Market Discrepancy & Arbitrage Engine
 
 An automated quantitative data pipeline built in Python that monitors live derivative sports markets, calculates multi-book market consensus medians, isolates retail pricing inefficiencies on DraftKings and FanDuel, and dispatches real-time actionable trade alerts via asynchronous Discord webhooks.
 
+## Why did I do this?
+Easy. I wanted to see if I can find any discrepancies between books and find a +EV. The project itself works just fine, but I have yet to implement it into real world settings. I have already found actual differences within books using this, I will post results later. 
 ---
 
 🏗 Pipeline Architecture
