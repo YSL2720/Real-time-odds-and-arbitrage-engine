@@ -11,17 +11,7 @@ An automated quantitative data pipeline built in Python that monitors live deriv
 
 🏗 Pipeline Architecture
 
-[The Odds API Feed]
-│
-▼
-[REST Ingestion & Serialization]
-│
-▼
-[Market Registry Aggregator]
-(Normalizes asymmetric two-way pricing across all US market makers)
-│
-▼
-[Quantitative Consensus Engine]
+[The Odds API Feed] -> [REST Ingestion & Serialization] -> [Market Registry Aggregator]//(Normalizes asymmetric two-way pricing across all US market makers) -> [Quantitative Consensus Engine]
 (Calculates median lines: BetMGM, Caesars, BetRivers, Bovada)
 │
 ▼
