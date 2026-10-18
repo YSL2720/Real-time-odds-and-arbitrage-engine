@@ -56,6 +56,11 @@ An automated quantitative data pipeline built in Python that monitors live deriv
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/realtime-odds-arbitrage-engine.git
+git clone https://github.com/YSL2720/realtime-odds-arbitrage-engine.git
 cd realtime-odds-arbitrage-engine
+```
+2. Install dependencies
+
+
+
 
